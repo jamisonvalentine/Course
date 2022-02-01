@@ -68,7 +68,7 @@ bakerx pull focal cloud-images.ubuntu.com
 * Add a port forward from 2800 => 22 for guestssh.
 * Add a port forward from 9000 => 5001 for a node application.
 
-2) Add the following required components to your project by editing the `postconfiguration(name)` function inside the lib/provider/vbox.js. You will want to take advantage of the `sshExe` command wrapper to send commands to the VM.
+2) Add the following required components to your project by editing the `postconfiguration(name)` function inside the lib/provider/vbox.js. You will want to take advantage of the `sshExec` command wrapper to send commands to the VM.
 
 * Install nodejs and git
 * Clone https://github.com/CSC-DevOps/App
@@ -122,7 +122,7 @@ Write code to update the /etc/resolv.conf file:
   nameserver 8.8.4.4
   ```
 
-3) Add the following required components to your project by editing the `postcustomize()` function inside lib/provider/vf.js. You will want to take advantage of the `sshExe` command wrapper to send commands to the VM.
+3) Add the following required components to your project by editing the `postcustomize()` function inside lib/provider/vf.js. You will want to take advantage of the `sshExec` command wrapper to send commands to the VM.
 
 * Install nodejs and git
 * Clone https://github.com/CSC-DevOps/App
